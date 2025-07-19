@@ -1,0 +1,89 @@
+/* #region Header Mobile Styles */
+
+.header {
+  padding-top: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.navList {
+  display: none;
+}
+
+.networkList {
+  display: none;
+}
+
+.burger {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+/* #endregion Header Mobile Styles */
+
+/* #region Header Tablet Styles */
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 24px;
+  }
+
+  .container {
+    align-items: center;
+  }
+
+  .networkList {
+    display: flex;
+    gap: 12px;
+  }
+
+  .networkLink {
+    border: 1px solid rgba(36, 36, 36, 0.1);
+    border-radius: 10px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    transition: background-color 250ms ease-in-out;
+  }
+
+  .networkLink .networkIcon {
+    opacity: 0.8;
+    fill: #242424;
+    transition: fill 250ms ease-in-out;
+  }
+
+  .networkLink:hover,
+  .networkLink:focus {
+    background-color: rgba(36, 36, 36, 0.8);
+  }
+
+  .networkLink:hover .networkIcon,
+  .networkLink:focus .networkIcon {
+    opacity: 1;
+    fill: #f4f4f4;
+  }
+
+  .burger {
+    display: none;
+  }
+}
+
+/* #endregion Header Tablet Styles */
+
+/* #region Header Desktop Styles */
+
+@media screen and (min-width: 1440px) {
+  .header {
+    padding-top: 28px;
+  }
+}
+
+/* #endregion Header Desktop Styles */

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import "modern-normalize/modern-normalize.css";
 import "./globals.css";
+import Header from "@/components/Header/Header";
 
 const dmSans = DM_Sans({
   weight: [
@@ -37,7 +38,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={dmSans.variable}>{children}</body>
+      <body className={dmSans.variable}>
+        <Header />
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
