@@ -8,7 +8,7 @@ export default function Header() {
     <header className={css.header}>
       <Container>
         <div className={css.container}>
-          <Link href="/" className={css.logo}>
+          <Link href="/" className={css.logo} aria-label="Go to homepage">
             <svg width={132} height={24} className={css.logoIcon}>
               <use href="/sprite.svg#logo"></use>
             </svg>
@@ -22,6 +22,7 @@ export default function Header() {
                 href="https://www.facebook.com/goITclub/"
                 className={css.networkLink}
                 target="_blank"
+                aria-label="Facebook page"
               >
                 <svg width={28} height={28} className={css.networkIcon}>
                   <use href="/sprite.svg#facebook"></use>
@@ -33,6 +34,7 @@ export default function Header() {
                 href="https://www.instagram.com/goitclub/"
                 className={css.networkLink}
                 target="_blank"
+                aria-label="Instagram page"
               >
                 <svg width={28} height={28} className={css.networkIcon}>
                   <use href="/sprite.svg#instagram"></use>
@@ -44,6 +46,7 @@ export default function Header() {
                 href="https://www.youtube.com/c/GoIT"
                 className={css.networkLink}
                 target="_blank"
+                aria-label="YouTube channel"
               >
                 <svg width={28} height={28} className={css.networkIcon}>
                   <use href="/sprite.svg#youtube"></use>
