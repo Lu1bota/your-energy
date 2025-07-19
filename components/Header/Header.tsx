@@ -8,8 +8,8 @@ export default function Header() {
     <header className={css.header}>
       <Container>
         <div className={css.container}>
-          <Link href="/">
-            <svg width={132} height={24}>
+          <Link href="/" className={css.logo}>
+            <svg width={132} height={24} className={css.logoIcon}>
               <use href="/sprite.svg#logo"></use>
             </svg>
           </Link>
@@ -29,14 +29,22 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <Link href="/" className={css.networkLink} target="_blank">
+              <Link
+                href="https://www.instagram.com/goitclub/"
+                className={css.networkLink}
+                target="_blank"
+              >
                 <svg width={28} height={28} className={css.networkIcon}>
                   <use href="/sprite.svg#instagram"></use>
                 </svg>
               </Link>
             </li>
             <li>
-              <Link href="/" className={css.networkLink} target="_blank">
+              <Link
+                href="https://www.youtube.com/c/GoIT"
+                className={css.networkLink}
+                target="_blank"
+              >
                 <svg width={28} height={28} className={css.networkIcon}>
                   <use href="/sprite.svg#youtube"></use>
                 </svg>
