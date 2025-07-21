@@ -3,6 +3,7 @@ import { DM_Sans } from "next/font/google";
 import "modern-normalize/modern-normalize.css";
 import "./globals.css";
 import Header from "@/components/Header/Header";
+import Footer from "@/components/Footer/Footer";
 
 const dmSans = DM_Sans({
   weight: [
@@ -41,6 +42,7 @@ export default function RootLayout({
       <body className={dmSans.variable}>
         <Header />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );

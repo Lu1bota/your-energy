@@ -1,0 +1,221 @@
+/* #region Footer Mobile Styles */
+
+.footer {
+  background-color: #242424;
+}
+
+.containerFooter {
+  padding-top: 40px;
+}
+
+.logoIcon {
+  fill: #f4f4f4;
+  transition: transform 250ms ease-in-out;
+}
+
+.logo:hover .logoIcon {
+  transform: scale(1.1);
+}
+
+.networkList {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.networkLink {
+  border: 1px solid rgba(244, 244, 244, 0.1);
+  border-radius: 10px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  transform: scale(1);
+  transition:
+    background-color 250ms ease-in-out,
+    transform 250ms ease-in-out;
+}
+
+.networkLink .networkIcon {
+  opacity: 0.8;
+  fill: #f4f4f4;
+  transition: fill 250ms ease-in-out;
+}
+
+.networkLink:hover,
+.networkLink:focus {
+  background-color: #f4f4f4;
+  transform: scale(1.1);
+}
+
+.networkLink:hover .networkIcon,
+.networkLink:focus .networkIcon {
+  opacity: 1;
+  fill: #242424;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 116%;
+  letter-spacing: -0.02em;
+  color: #f4f4f4;
+  margin-bottom: 20px;
+}
+
+.titleItalic {
+  font-style: italic;
+}
+
+.subText {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #f4f4f4;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 120px;
+}
+
+.input {
+  border: 1px solid #f4f4f4;
+  border-radius: 30px;
+  padding: 12px 14px 12px 14px;
+  background-color: transparent;
+  color: #f4f4f4;
+  font-size: 14px;
+  outline: none;
+  height: 42px;
+}
+
+.input::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  color: rgba(244, 244, 244, 0.6);
+}
+
+.button {
+  border-radius: 30px;
+  padding: 12px 150px;
+  background-color: #f4f4f4;
+  height: 42px;
+  cursor: pointer;
+  border: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #242424;
+  transition:
+    background-color 250ms ease-in-out,
+    color 250ms ease-in-out;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #e0e0e0;
+  color: #000000;
+}
+
+.energyText {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #c6cdd1;
+  opacity: 0.9;
+}
+
+/* #endregion Footer Mobile Styles */
+
+/* #region Footer Tablet Styles */
+
+@media screen and (min-width: 768px) {
+  .containerFooter {
+    padding-top: 64px;
+  }
+
+  .containerContent {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .networkList {
+    margin-top: 32px;
+    margin-bottom: 0;
+  }
+
+  .networkLink {
+    width: 44px;
+    height: 44px;
+  }
+
+  .title {
+    max-width: 450px;
+    min-height: 180px;
+    font-size: 56px;
+    line-height: 1.07;
+    margin-bottom: 32px;
+  }
+
+  .subText {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+
+  .form {
+    max-width: 352px;
+    min-height: 116px;
+    margin-bottom: 64px;
+  }
+
+  .input {
+    min-height: 48px;
+    font-size: 16px;
+  }
+
+  .input::placeholder {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .button {
+    padding: 12px 157px;
+    min-height: 48px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+/* #endregion Footer Tablet Styles */
+
+/* #region Footer Desktop Styles */
+
+@media screen and (min-width: 1440px) {
+  .title {
+    max-width: 595px;
+    min-height: 120px;
+    margin-bottom: 0;
+  }
+
+  .containerContent {
+    display: flex;
+    gap: 158px;
+    margin-bottom: 70px;
+  }
+
+  .containerTitle {
+    display: flex;
+    gap: 115px;
+  }
+}
+
+/* #endregion Footer Desktop Styles */
