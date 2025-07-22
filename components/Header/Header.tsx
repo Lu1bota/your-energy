@@ -2,6 +2,7 @@ import Link from "next/link";
 import Container from "../Container/Container";
 import css from "./Header.module.css";
 import Navigation from "../Navigation/Navigation";
+import MobileMenu from "../MobileMenu/MobileMenu";
 
 export default function Header() {
   return (
@@ -55,11 +56,16 @@ export default function Header() {
             </li>
           </ul>
 
-          <button type="button" className={css.burger}>
+          <button
+            type="button"
+            className={css.burger}
+            aria-label="Open mobile menu"
+          >
             <svg width={32} height={32}>
               <use href="/sprite.svg#burger"></use>
             </svg>
           </button>
+          <MobileMenu />
         </div>
       </Container>
     </header>
