@@ -41,6 +41,10 @@ export interface QouteResponse {
   quote: string;
 }
 
+export interface FormType {
+  email: string;
+}
+
 export interface SubscriptionResponse {
   message: string;
 }
@@ -70,7 +74,9 @@ export async function getQuote() {
   return res;
 }
 
-export async function createSubscription(email: string) {
-  const res = await axios.post<SubscriptionResponse>("/subscription", email);
+export async function createSubscription({ email }: FormType) {
+  const res = await axios.post<SubscriptionResponse>("/subscription", {
+    email,
+  });
   return res.data;
 }

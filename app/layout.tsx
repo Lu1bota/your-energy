@@ -4,6 +4,7 @@ import "modern-normalize/modern-normalize.css";
 import "./globals.css";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
+import { Toaster } from "react-hot-toast";
 
 const dmSans = DM_Sans({
   weight: [
@@ -43,6 +44,7 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
+        <Toaster />
       </body>
     </html>
   );

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Container from "../Container/Container";
 import css from "./Footer.module.css";
+import FormFooter from "../FormFooter/FormFooter";
 
 export default function Footer() {
   const date = new Date().getFullYear();
@@ -68,24 +69,14 @@ export default function Footer() {
                   Subscribe and learn about new exercises!
                 </p>
 
-                <form action="" className={css.form}>
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Email"
-                    className={css.input}
-                  />
-                  <button type="submit" className={css.button}>
-                    Send
-                  </button>
-                </form>
+                <FormFooter />
               </div>
             </div>
           </div>
 
           <p className={css.energyText}>Your Energy. All rights reserved.</p>
-          <p>Privacy Policy / Terms of Service</p>
-          <span>&#169;{date}</span>
+          <p className={css.privacyText}>Privacy Policy / Terms of Service</p>
+          <span className={css.dateText}>&#169;{date}</span>
         </div>
       </Container>
     </footer>

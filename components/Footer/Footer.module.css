@@ -6,6 +6,7 @@
 
 .containerFooter {
   padding-top: 40px;
+  padding-bottom: 10px;
 }
 
 .logoIcon {
@@ -132,6 +133,26 @@
   letter-spacing: -0.02em;
   color: #c6cdd1;
   opacity: 0.9;
+  margin-bottom: 10px;
+}
+
+.privacyText {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #c6cdd1;
+  display: inline;
+  margin-right: 79px;
+}
+
+.dateText {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  color: #c6cdd1;
+  opacity: 0.9;
 }
 
 /* #endregion Footer Mobile Styles */
@@ -141,6 +162,7 @@
 @media screen and (min-width: 768px) {
   .containerFooter {
     padding-top: 64px;
+    padding-bottom: 16px;
   }
 
   .containerContent {
@@ -193,6 +215,16 @@
     font-size: 16px;
     line-height: 1.5;
   }
+
+  .energyText {
+    display: inline;
+    margin-bottom: 0;
+    margin-right: 78px;
+  }
+
+  .privacyText {
+    margin-right: 178px;
+  }
 }
 
 /* #endregion Footer Tablet Styles */
@@ -215,6 +247,14 @@
   .containerTitle {
     display: flex;
     gap: 115px;
+  }
+
+  .energyText {
+    margin-right: 122px;
+  }
+
+  .privacyText {
+    margin-right: 498px;
   }
 }
 
