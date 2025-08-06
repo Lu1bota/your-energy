@@ -4,9 +4,12 @@ import Link from "next/link";
 import css from "./MobileMenu.module.css";
 import { createPortal } from "react-dom";
 import { useEffect, useState } from "react";
+import { useGlobalState } from "@/lib/store/store";
 
 export default function MobileMenu() {
   const [mounted, setMounted] = useState(false);
+  const closeMenu = useGlobalState((state) => state.closeMenu);
+  const isOpenMenu = useGlobalState((state) => state.isOpenMenu);
 
   useEffect(() => {
     setMounted(true);
@@ -15,9 +18,18 @@ export default function MobileMenu() {
   if (!mounted) return null;
 
   return createPortal(
-    <div className={`${css.overlay}`}>
+    <div
+      className={
+        isOpenMenu ? `${css.overlay} ${css.active}` : `${css.overlay} `
+      }
+    >
       <div className={css.menu}>
-        <button type="button" aria-label="Close menu" className={css.button}>
+        <button
+          type="button"
+          aria-label="Close menu"
+          className={css.button}
+          onClick={closeMenu}
+        >
           <svg width={32} height={32} className={css.icon}>
             <use href="/sprite.svg#close"></use>
           </svg>

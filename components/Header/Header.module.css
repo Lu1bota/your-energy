@@ -19,13 +19,6 @@
   display: none;
 }
 
-.burger {
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
-  stroke: #242424;
-}
-
 /* #endregion Header Mobile Styles */
 
 /* #region Header Tablet Styles */

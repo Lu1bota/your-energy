@@ -11,6 +11,11 @@ export default function FormFooter() {
       email: formValues.email.toString(),
     };
 
+    if (!requestBody.email.trim()) {
+      toast.error("This field is required. Please enter a value.");
+      return;
+    }
+
     try {
       const res = await createSubscription(requestBody);
       toast.success(res.message);
@@ -29,7 +34,6 @@ export default function FormFooter() {
         placeholder="Email"
         className={css.input}
         pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-        required
       />
       <button type="submit" className={css.button}>
         Send

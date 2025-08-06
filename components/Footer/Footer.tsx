@@ -60,7 +60,7 @@ export default function Footer() {
 
             <div className={css.containerTitle}>
               <h2 className={css.title}>
-                Transforming your <span className={css.titleItalic}>body</span>{" "}
+                Transforming your <span className={css.titleItalic}>body</span>
                 shape with us
               </h2>
 
