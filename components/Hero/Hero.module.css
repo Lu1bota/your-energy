@@ -1,0 +1,128 @@
+/* #region Hero Mobile Styles */
+
+.section {
+  padding-bottom: 40px;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 1.16;
+  letter-spacing: -0.02em;
+  color: #242424;
+  margin-bottom: 20px;
+}
+
+.titleItalic {
+  font-style: italic;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #242424;
+  margin-bottom: 20px;
+}
+
+.containerImage {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  min-height: 460px;
+  margin-bottom: 20px;
+}
+
+.image {
+  object-fit: cover;
+  object-position: center;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.listItem {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #242424;
+  border: 1px solid #242424;
+  border-radius: 30px;
+  padding: 4px 12px;
+}
+
+/* #endregion Hero Mobile Styles */
+
+/* #region Hero Tablet Styles */
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding-bottom: 64px;
+  }
+
+  .title {
+    font-size: 74px;
+    line-height: 1;
+    max-width: 639px;
+  }
+
+  .icon {
+    width: 59px;
+    height: 59px;
+  }
+
+  .text {
+    font-size: 18px;
+    line-height: 1.33;
+    max-width: 528px;
+    margin-bottom: 32px;
+  }
+
+  .containerImage {
+    min-height: 550px;
+    margin-bottom: 16px;
+  }
+
+  .image {
+    object-position: 50% 0;
+    transform: scale(1.35) translateY(7%) translateX(4%);
+  }
+
+  .containerList {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+  }
+
+  .listItem {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    color: #242424;
+    border: 1px solid #242424;
+    border-radius: 30px;
+    padding: 4px 12px;
+  }
+}
+
+/* #endregion Hero Tablet Styles */
+
+/* #region Hero Desktop Styles */
+
+@media screen and (min-width: 1440px) {
+  .containerImage {
+    min-height: 350px;
+    margin-bottom: 0;
+  }
+
+  .image {
+    object-position: 50% 30%;
+    transform: scale(1) translateY(0) translateX(0);
+  }
+}
+
+/* #endregion Hero Desktop Styles */
